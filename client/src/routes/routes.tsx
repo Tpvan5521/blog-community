@@ -5,15 +5,9 @@ import { AuthProvider, AuthContext } from "context/auth/AuthContext";
 import PageLayout from "components/Layout";
 import PageLoader from "components/Loader/PageLoader";
 const HomePage = React.lazy(() => import("pages/Home"));
-<<<<<<< HEAD
-const PostPage = React.lazy(() => import("pages/Post"));
-const ProfilePage = React.lazy(() => import("pages/Profile"));
-const LoginPage = React.lazy(() => import("pages/Login"));
-=======
 const PostPage = React.lazy(() => import("pages/Post/WritePost"));
 const ProfilePage = React.lazy(() => import("pages/Profile"));
 const LoginPage = React.lazy(() => import("pages/Auth/LogIn"));
->>>>>>> 901428e (update homepage & config)
 
 export default function App() {
   return (
