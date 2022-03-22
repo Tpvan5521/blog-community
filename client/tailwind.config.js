@@ -10,6 +10,7 @@ module.exports = {
       default: "rgba(255,255,255,0.9)",
       transparent: "rgba(255,255,255,0.1)",
       dark: "rgba(0,0,0,0.9)",
+      coffee: "#8c3f0a",
     },
   },
   plugins: [],

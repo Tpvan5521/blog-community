@@ -1,16 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import AuthStatus from "./AuthStatus";
 import styled from "styled-components";
-import HeaderItem from "./HeaderItem";
+// import MenuItem from "./MenuItem";
 import { useAuth } from "routes/routes";
 import coffee from "assets/icons/coffee.png";
+import Search from "components/Input/Search";
 
 const StyledHeader = styled.div`
   box-shadow: 0 4px 6px -1px rgb(255 255 255 / 0.1), 0 2px 4px -2px rgb(255 255 255 / 0.1);
 `;
 
 const FirstItem = styled.div`
-  padding: 0.5rem 1rem 0.5rem 0;
+  padding: 0.5rem 0;
   height: 4rem;
   display: flex;
   align-items: center;
@@ -18,6 +19,8 @@ const FirstItem = styled.div`
 `;
 
 const Header = () => {
+  const [searchValue, setSearchValue] = useState<string>("");
+
   return (
     <StyledHeader>
       <div className="container mx-auto">
@@ -27,11 +30,14 @@ const Header = () => {
             <img src={coffee} alt="coffee" width={28} height={28} />
             &#47;&#62;
           </FirstItem>
-          <ul className="flex-1 flex items-center">
+          {/* <ul className="flex-1 flex items-center">
             {listItems.map((item: any[], key: number) => (
-              <HeaderItem content={item[0]} link={item[1]} key={key} />
+              <MenuItem content={item[0]} link={item[1]} key={key} />
             ))}
-          </ul>
+          </ul> */}
+          <div className="flex-1 flex">
+            <Search value={searchValue} placeholder="Search post..." onChange={(e: any) => setSearchValue(e.target.value)} />
+          </div>
           <div className="flex items-center">
             <AuthStatus useAuth={useAuth} />
           </div>
@@ -41,10 +47,10 @@ const Header = () => {
   );
 };
 
-const listItems = [
-  ["Home", "/home"],
-  ["About", "/about"],
-  ["Contact", "/contact"],
-];
+// const listItems = [
+//   ["Home", "/home"],
+//   ["About", "/about"],
+//   ["Contact", "/contact"],
+// ];
 
 export default Header;
