@@ -41,7 +41,7 @@ function HomePage() {
         </ul>
       </div>
       {/* main */}
-      <div className="flex-1 my-4">q</div>
+      <div className="flex-1 my-4"></div>
       {/* right menu */}
       <div className="w-80 pl-4 my-4">
         <ul className="mb-4">
