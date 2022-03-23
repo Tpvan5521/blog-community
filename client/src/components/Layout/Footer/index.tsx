@@ -1,12 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import styled from "styled-components";
 import { FaFacebookSquare, FaTwitter, FaLinkedin, FaGithub } from "react-icons/fa";
 import { FiMail, FiPhoneCall } from "react-icons/fi";
-
-const StyledHr = styled.hr`
-  color: rgba(255, 255, 255, 0.2);
-`;
+import Hr from "Line/Hr";
 
 const Footer = () => {
   return (
@@ -69,7 +65,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <StyledHr />
+      <Hr />
       <div className="container mx-auto text-center">
         {/* coppyright */}
         <div className="py-4">Copyright &copy; 2022</div>

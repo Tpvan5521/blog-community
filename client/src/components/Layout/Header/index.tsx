@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import AuthStatus from "./AuthStatus";
 import styled from "styled-components";
-// import MenuItem from "./MenuItem";
 import { useAuth } from "routes/routes";
 import coffee from "assets/icons/coffee.png";
 import Search from "components/Input/Search";
@@ -30,13 +29,13 @@ const Header = () => {
             <img src={coffee} alt="coffee" width={28} height={28} />
             &#47;&#62;
           </FirstItem>
-          {/* <ul className="flex-1 flex items-center">
-            {listItems.map((item: any[], key: number) => (
-              <MenuItem content={item[0]} link={item[1]} key={key} />
-            ))}
-          </ul> */}
           <div className="flex-1 flex">
-            <Search value={searchValue} placeholder="Search post..." onChange={(e: any) => setSearchValue(e.target.value)} />
+            <Search
+              value={searchValue}
+              placeholder="Search post..."
+              onChange={(e: any) => setSearchValue(e.target.value)}
+              maxWidth="320px"
+            />
           </div>
           <div className="flex items-center">
             <AuthStatus useAuth={useAuth} />
@@ -46,11 +45,5 @@ const Header = () => {
     </StyledHeader>
   );
 };
-
-// const listItems = [
-//   ["Home", "/home"],
-//   ["About", "/about"],
-//   ["Contact", "/contact"],
-// ];
 
 export default Header;

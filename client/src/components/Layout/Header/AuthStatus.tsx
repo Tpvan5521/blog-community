@@ -10,7 +10,7 @@ const AuthStatus = ({ useAuth }: { useAuth: any }) => {
   if (!auth.user) {
     return (
       <>
-        <DefaultButton content="Log in" />
+        <OutlineDefaultButton content="Log in" customClassName="border-none" />
         &nbsp;
         <OutlineDefaultButton content="Register in" />
       </>
