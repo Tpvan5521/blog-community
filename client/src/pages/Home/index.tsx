@@ -61,7 +61,7 @@ function HomePage() {
           ))}
         </ul>
         <ul className="mb-4">
-          <Title content="FAQs" customClassName="mb-4" />
+          <Title content="FAQs" customClassName="mb-4 " />
           {posts.slice(0, 5).map((post: Post, key: number) => (
             <SidebarBottomCard title={post.description} link="/" tags={post.tags} key={key} customClassName="mb-2 bg-transparent" />
           ))}
