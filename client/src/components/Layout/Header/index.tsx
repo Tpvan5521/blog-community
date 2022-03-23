@@ -4,9 +4,13 @@ import styled from "styled-components";
 import { useAuth } from "routes/routes";
 import coffee from "assets/icons/coffee.png";
 import Search from "components/Input/Search";
+import Hr from "Line/Hr";
 
 const StyledHeader = styled.div`
-  box-shadow: 0 4px 6px -1px rgb(255 255 255 / 0.1), 0 2px 4px -2px rgb(255 255 255 / 0.1);
+  background: linear-gradient(to right, rgb(12, 12, 12), rgb(67, 67, 67));
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
 `;
 
 const FirstItem = styled.div`
@@ -42,6 +46,7 @@ const Header = () => {
           </div>
         </div>
       </div>
+      <Hr />
     </StyledHeader>
   );
 };

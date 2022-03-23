@@ -1,7 +1,11 @@
 import React from "react";
 
 function NotFoundPage() {
-  return <h1 className="text-3xl font-bold underline">NotFound Page</h1>;
+  return (
+    <div className="text-center pt-16">
+      <p className="text-2xl font-bold">404 | Page Not Found</p>
+    </div>
+  );
 }
 
 export default NotFoundPage;

@@ -29,6 +29,6 @@ export const OutlineCoffeeButton = ({ content, customClassName }: IOutlineButton
   return <button className={`text-coffee border-2 border-coffee rounded-lg h-9 px-5 ${customClassName}`}>{content}</button>;
 };
 
-export const OutlineTransparentButton = ({ content, customClassName }: IOutlineButton) => {
+export const OutlinetransparentButton = ({ content, customClassName }: IOutlineButton) => {
   return <button className={`text-transparent border-2 border-transparent rounded-lg h-9 px-5 ${customClassName}`}>{content}</button>;
 };

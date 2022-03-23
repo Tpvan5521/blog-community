@@ -9,8 +9,8 @@ interface Post {
   imgUrl: string;
   keywords: string[];
   tags: string[];
-  createdDate: Date;
-  updatedDate: Date; // last updated;
+  createdDate: Date | string;
+  updatedDate: Date | string; // last updated;
   reaction: Reaction;
   comments: Comment[];
 }

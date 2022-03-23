@@ -1,10 +1,7 @@
 import React from "react";
 
-const Title = ({ content, customClassName }: { content: string; customClassName?: string }) => {
-  if (content !== "") {
-    return <></>;
-  }
+const Paragraph = ({ content, customClassName }: { content: string; customClassName?: string }) => {
   return <p className={`text-white ${customClassName}`}>{content}</p>;
 };
 
-export default Title;
+export default Paragraph;

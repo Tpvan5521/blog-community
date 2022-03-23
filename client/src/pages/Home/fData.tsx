@@ -4,7 +4,6 @@ import { IVItem } from "components/Menu/VMenu/Item";
 import { AiOutlineHome, AiOutlineInfoCircle, AiOutlineContacts, AiOutlineQuestionCircle } from "react-icons/ai";
 import { CgHashtag } from "react-icons/cg";
 import { IoEllipsisHorizontalOutline } from "react-icons/io5";
-import Post from "constants/interfaces/post.interface";
 
 export const menuItems: IVItem[] = [
   {
