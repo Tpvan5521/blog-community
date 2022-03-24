@@ -7,8 +7,10 @@ export interface Comment {
 }
 
 export interface Reaction {
+  view: number;
   like: number;
   love: number;
   unicorn: number;
   share: number;
+  comment: number;
 }

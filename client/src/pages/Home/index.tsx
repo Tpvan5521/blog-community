@@ -2,6 +2,7 @@ import React from "react";
 import MenuItem from "components/Menu/VMenu/Item";
 import { IVItem } from "components/Menu/VMenu/Item";
 import Title from "components/Text/Title";
+import HomeCard from "components/Card/HomeCard";
 import SidebarTopCard from "components/Card/SidebarTopCard";
 import SidebarBottomCard from "components/Card/SidebarBottomCard";
 import Hr from "Line/Hr";
@@ -41,7 +42,24 @@ function HomePage() {
         </ul>
       </div>
       {/* main */}
-      <div className="flex-1 my-4"></div>
+      <div className="flex-1 my-4">
+        <ul className="mb-4">
+          <Title content="Recommend Posts" customClassName="mb-4" />
+          {posts.slice(0, 5).map((post: Post, key: number) => (
+            <HomeCard
+              title={post.title}
+              link="/"
+              author={post.author}
+              description={post.description}
+              reaction={post.reaction}
+              srcImg={post.imgUrl}
+              imgH={240}
+              imgW={240}
+              key={key}
+            />
+          ))}
+        </ul>
+      </div>
       {/* right menu */}
       <div className="w-80 pl-4 my-4">
         <ul className="mb-4">
