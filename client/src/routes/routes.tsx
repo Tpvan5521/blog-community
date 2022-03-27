@@ -3,7 +3,7 @@ import { Routes, Route, useLocation, Navigate, BrowserRouter } from "react-route
 import { AuthProvider, AuthContext } from "context/auth/AuthContext";
 import PageRoute from "constants/interfaces/route.interface";
 
-import PageLayout from "components/Layout";
+import PageLayout from "components/Layout/PageLayout";
 import PageLoader from "components/Loader/PageLoader";
 const PageNotFound = lazy(() => import("pages/404"));
 const LoginPage = lazy(() => import("pages/Auth/LogIn"));

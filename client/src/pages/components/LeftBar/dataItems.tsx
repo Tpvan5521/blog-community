@@ -1,11 +1,11 @@
 import React from "react";
-import { IVItem } from "components/Menu/VMenu/Item";
+import { IItem } from "components/List/Item";
 
-import { AiOutlineHome, AiOutlineInfoCircle, AiOutlineContacts, AiOutlineQuestionCircle } from "react-icons/ai";
+import { AiOutlineHome, AiOutlineInfoCircle, AiOutlineContacts, AiOutlineQuestionCircle, AiOutlineSetting } from "react-icons/ai";
 import { CgHashtag } from "react-icons/cg";
-import { IoEllipsisHorizontalOutline } from "react-icons/io5";
+import { IoEllipsisHorizontalOutline, IoPeopleOutline, IoPersonOutline } from "react-icons/io5";
 
-export const menuItems: IVItem[] = [
+export const menuItems: IItem[] = [
   {
     content: "Home",
     link: "/",
@@ -42,9 +42,39 @@ export const menuItems: IVItem[] = [
       </div>
     ),
   },
+  {
+    content: "Community",
+    link: "/community",
+    icon: (
+      <div className="text-xl mr-4">
+        <IoPeopleOutline />
+      </div>
+    ),
+  },
 ];
 
-export const tags: IVItem[] = [
+export const otherItems: IItem[] = [
+  {
+    content: "Account",
+    link: "/user/:userId",
+    icon: (
+      <div className="text-xl mr-4">
+        <IoPersonOutline />
+      </div>
+    ),
+  },
+  {
+    content: "Setting",
+    link: "/user/setting",
+    icon: (
+      <div className="text-xl mr-4">
+        <AiOutlineSetting />
+      </div>
+    ),
+  },
+];
+
+export const tags: IItem[] = [
   {
     content: "JavaScript",
     link: "/tags/javascript",

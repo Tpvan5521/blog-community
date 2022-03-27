@@ -29,7 +29,7 @@ const StyledReaction = styled.div`
 export const HomeCard = ({ srcImg, title, link, author, description, reaction, customClassName, imgH, imgW }: ICard) => {
   return (
     <li className={`flex items-center bg-transparent rounded-2xl mb-4 ${customClassName}`}>
-      <img src={srcImg} alt={title} width={imgW ? imgW : "auto"} height={imgH ? imgH : "auto"} className="rounded-l-lg" />
+      <img src={srcImg} alt={title} width={imgW ? imgW : "auto"} height={imgH ? imgH : "auto"} className="rounded-l-2xl" />
       <div className="p-4">
         <Link to={link} className="w-full">
           <Title content={title} customClassName="text-3xl mb-4" />
