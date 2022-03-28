@@ -96,7 +96,7 @@ const pageRoutes: PageRoute[] = [
     component: <EditPostPage />,
   },
   {
-    path: "/posts/read/:postSlug",
+    path: "/posts/read/",
     exact: true,
     public: true,
     component: <PostDetailsPage />,

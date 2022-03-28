@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { FaFacebookSquare, FaTwitter, FaLinkedin, FaGithub } from "react-icons/fa";
 import { FiMail, FiPhoneCall } from "react-icons/fi";
-import Hr from "Line/Hr";
+import Hr from "components/Line/Hr";
 
 const Footer = () => {
   return (

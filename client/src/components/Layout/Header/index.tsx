@@ -4,7 +4,7 @@ import styled from "styled-components";
 import { useAuth } from "routes/routes";
 import coffee from "assets/icons/coffee.png";
 import Search from "components/Input/Search";
-import Hr from "Line/Hr";
+import Hr from "components/Line/Hr";
 
 const StyledHeader = styled.div`
   background: linear-gradient(to right, rgb(12, 12, 12), rgb(67, 67, 67));

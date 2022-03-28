@@ -5,29 +5,23 @@ import Paragraph from "components/Text/Paragraph";
 import { Link } from "react-router-dom";
 
 interface ICard {
-  srcImg: string;
   title: string;
   link: string;
   author: string;
-  description?: string;
   customClassName?: string;
-  imgW?: string | number;
-  imgH?: string | number;
 }
 
-export const SidebarTopCard = ({ srcImg, title, link, author, description, customClassName, imgH, imgW }: ICard) => {
+export const RelatedCard = ({ title, link, author, customClassName }: ICard) => {
   return (
-    <li className={`flex items-center bg-transparent rounded-lg ${customClassName}`}>
-      <img src={srcImg} alt={title} width={imgW ? imgW : "auto"} height={imgH ? imgH : "auto"} className="rounded-l-lg" />
-      <div className="p-2">
+    <li className={`flex-1 flex items-center mr-4 ${customClassName}`}>
+      <div className="p-2 border-2 border-transparent rounded-lg">
         <Link to={link} className="w-full">
           <Title content={title} />
         </Link>
-        <Paragraph content={author} customClassName="font-bold text-white" />
-        <Paragraph content={description ? description : ""} />
+        <Paragraph content={author} customClassName="text-white" />
       </div>
     </li>
   );
 };
 
-export default SidebarTopCard;
+export default RelatedCard;
