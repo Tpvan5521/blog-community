@@ -34,16 +34,6 @@ export default function AppRoutes() {
                   <Route path={pageRoute.path} element={<RequireAuth>{pageRoute.component}</RequireAuth>} key={key} />
                 ),
               )}
-              <Route path="/" element={<HomePage />} />
-              <Route path="/login" element={<LoginPage useAuth={useAuth} />} />
-              <Route
-                path="/profile"
-                element={
-                  <RequireAuth>
-                    <ProfilePage />
-                  </RequireAuth>
-                }
-              />
             </Route>
           </Routes>
         </AuthProvider>
